@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="workstyles.css" />
+    <style>
+      /* General page styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      /* Main content container styling */
+      .content-container {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px #888888;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px; /* Ekran boyutlarına göre maksimum genişlik */
+        width: 100%; /* Genişliği yüzdeye ayarla */
+        border-radius: 10px; /* Yünlü köşeler */
+      }
+
+      /* Column styling */
+      .split {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Special style for the Signature column */
+      .signature {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      /* Style for the Image column */
+      .split.right {
+        text-align: center;
+      }
+
+      /* Colored icon styles */
+      .green-icon {
+        color: green;
+      }
+
+      /* Align stars horizontally */
+      .stars-container {
+        display: flex;
+        align-items: center;
+      }
+
+      /* Style for the Google logo */
+      .google-logo {
+        width: 15%; /* Resmin yarısı kadar genişlik */
+        max-width: 150px; /* Maksimum genişlik ayarı */
+      }
+
+      /* Style for statistics items */
+      .statistics__item {
+        flex: 1;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-container">
+      <!-- Left Column - Signature and Contact Info -->
+      <div class="statistics__item">
+        <div class="signature">
+          <h1 style="color: green"><strong>Your Name</strong></h1>
+          <!-- Address -->
+          <p>
+            <i class="fas fa-map-marker-alt green-icon"></i>
+            <a
+              href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003"
+              >Address</a
+            >
+          </p>
+          <!-- Website -->
+          <p>
+            <i class="fas fa-globe green-icon"></i>
+            <a href="https://www.yourwebsite.com">www.yourwebsite.com</a>
+          </p>
+          <!-- Phone number -->
+          <p>
+            <i class="fas fa-phone green-icon"></i>
+            <a href="tel:+1234567890">+1 (234) 567-890</a>
+          </p>
+          <!-- Fax number -->
+          <p>
+            <i class="fas fa-print green-icon"></i>
+            <a href="tel:+1234567890">+1 (234) 567-890</a>
+          </p>
+          <!-- Social media links or additional info -->
+          <div class="stars-container">
+            <p></p>
+            <i class="fas fa-star yellow-star"></i>
+            <!-- Yellow star symbol 1 -->
+            <i class="fas fa-star yellow-star"></i>
+            <!-- Yellow star symbol 2 -->
+            <i class="fas fa-star yellow-star"></i>
+            <!-- Yellow star symbol 3 -->
+            <i class="fas fa-star yellow-star"></i>
+            <!-- Yellow star symbol 4 -->
+            <i class="fas fa-star yellow-star"></i>&nbsp;
+            <!-- Yellow star symbol 5 -->
+            <p><a href="http://somerandomlink.com/">Click here</a><b>&nbsp;to check out our</b>&nbsp;<img src="googlelogo.png" alt="Google Logo" class="google-logo"/><b>&nbsp;Review!</b></p>
+
+          </div>
+        </div>
+      </div>
+      <!-- Right Column - Company Logo -->
+      <div class="statistics__item">
+        <div>
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Placeholder Image"
+          />
+          <p>YOUR COMPANY LOGO</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
